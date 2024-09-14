@@ -1,0 +1,23 @@
+<html>
+    
+    <head>
+        <title>Kanna</title>
+        </head>
+    <body>
+        <p id="manu">hii</p>
+        <p id="kanna">hello</p>
+        <input id="name" placeholder="enter name"><br>
+        <input id="roll" placeholder="enter roll"><br>
+        <botton id="btn"> submit</botton>
+    </body>
+    <script>
+        let uname;
+        let uroll;
+        document.getElementById("btn").onclick=function(){
+            uname=document.getElementById("name").value
+            document.getElementById("manu").innerHTML=`hello ${uname}`;
+              uroll=document.getElementById("roll").value
+            document.getElementById("kanna").innerHTML=`ur roll is ${uroll}`;
+        };
+    </script>
+</html>
